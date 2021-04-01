@@ -1,7 +1,7 @@
 //DO NOT CHANGE CODE HERE
 var customers = require('./customers.json');
 //DO NOT CHANGE CODE HERE
-
+console.log(customers[2].company)
 
 
 
@@ -26,8 +26,18 @@ then?
 */
 
 function maleCount(array){
-
+  var count = 0;
+  for(var i = 0; i <= array.length - 1; i++){
+    if(array[i].gender === 'male'){
+      count++
+    }
+  }
+  return count;
 };
+console.log(maleCount(customers))
+
+
+
 
 
 /*
@@ -50,5 +60,13 @@ then?
 */
 
 function femaleCount(array){
-
+  var count = 0;
+for(i = 0; i <= array.length - 1; i++){
+  if(array[i].gender === 'female'){
+    count++
+  }
+}
+return count; 
 };
+console.log(femaleCount(customers))
+
